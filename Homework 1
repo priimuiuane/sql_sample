@@ -1,0 +1,13 @@
+#Create an s_vendor table using information in the following chart:
+#s_vendor (s_vendor_id, name, street_address, city, state, zipcode)
+CREATE TABLE s_vendor
+(
+s_vendor_id INT(9) NOT NULL AUTO_INCREMENT,
+name					VARCHAR(50) NOT NULL,
+contact 				VARCHAR(60),
+street_address 			VARCHAR(400),
+city 					VARCHAR(30),
+state 					VARCHAR(20),
+country 				VARCHAR(30),
+zipcode					VARCHAR(75),
+CONSTRAINT s_vendor_id_pk PRIMARY KEY (s_vendor_id));
